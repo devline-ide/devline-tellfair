@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "apiVersion": 6,
+  "compatibility": {
+    "minIdeVersion": "0.1.0",
+    "capabilities": [
+      "ui.webviews",
+      "ui.settings",
+      "editor.documents",
+      "editor.save",
+      "editor.history",
+      "editor.notices",
+      "editor.reveal",
+      "media.playback",
+      "ui.inline-launcher",
+      "ui.native-browser-settings"
+    ]
+  },
+  "entryPoint": "devline.tellfair.TellfairExtension",
+  "extension": {
+    "schemaVersion": 1,
+    "id": "devline.tellfair",
+    "version": "0.1.9",
+    "name": {
+      "en": "Tellfair",
+      "ru": "Tellfair"
+    },
+    "description": {
+      "en": "Text to speech with Tellfair and .tfspeech documents.",
+      "ru": "Озвучка через Tellfair и документы .tfspeech."
+    },
+    "publisher": "DevLine",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAY80lEQVR4nO2deXBUVb7H8+eb92rem2ETJXsIIGEJWSAkZOl0p/fl9u2NJN2dkK3TWdhBR8enIqiDgIC4tIg8ERIgiAgIAuK+zYw6oCBub8s/lFVaM/PUV2+E8ffq3Nu36eXec5e+t9MJuVXfKv7pKiqf7znne87vLBkZ49/4N/6Nf4p9Lo3rX1pJX1O7zbu9i/Sd6nH6rvS6vFf7nb4f+t2+a8vdPhAmLy0Xm5pj5UxUf4KahMkRr8ZEkYyWQp9I9djd14KE64cA4bnaZXNdaTO7Xm4xOrY3Gx2N6G83Kq3ptXjz2onmh4PO5ksr3L7rK9x+oOWLSDj4sQu/j/RAb7Ts0XJDD+G+3mF1fuo3OR5qMpI5Gen+tRI+MuD0vb/c5f/7Cg8NfbnLB35rM5i1HqhTOaGsioSiCgJmLCSgoMwGeaU2yCuxYmShlLuATeZYFTMyRZQTr/lGjAyUspHmxUufqLlIOkpZrNJC1hwuNUDmnAbIntsAefO1MLNYB/PLDFBVaQZ9nRUa9Q5kAMoIYTP8vd3sfL/R4CYy0u3z2X2uoMN7mYLu8UO/2w8eUxNU1jhhRjkB+aW2iPKiVSIVvpkXfs4ogJ+JVBQvTUS5cxtg4SIjkA12CBIu6EWGINzQbiYvNRpsjrTo6rsdvtMM+KDTB7oGD8xaaIf8UgR+9MDPFgpeMfgabs1WQ95cDaiqzdBhcUaM4Dfa3yE1ZOGIwG8lvH197pb/ReD73D7QajxQWB4NXip8GnzegvSGn5UK+LNp+NOilFOkAdUSMwRsqEdwoZ7hR6+eCKYMvNnc9Y8dpPeFFZ4WqtV7LE1QVEFCfhkxyuBL6fKlwo8CnwT8aE2fpwFSY6NMgNRqdAy5Kly/UBR+S23Lr4Kk90MEv9/lB43aTYPngB8DXmDYEwS/WAh845iFP212PUy7ndbiCj10W9Gw4IIOC3mhsdY8SRH4rbbWrB6n798R/IDDBwuqHMJbvSJJP13ga4V1+SLgY8FHwWc0u1gL7WY0a3BCh8XxtcfmyZIVvo8gJgZd/q8Q/E7SC3MWi+jyb/JpXiZP0k8WPtJtt6tg+lw1+Ixk2ATO//Q22KfIAt/r9f5Tt9N3AY337aQXZi2yyzTej0/zMuOSvlT4jPLmqsFvIKHH5oR2E/mxLJmg0+E7iuAHnD5xLT/N4KftNG+2PPApzVJBwRw1LDPRJmgx2A8lBb/V3txDLey4/OLG/Jsy6WtHHD6tOrh9vga6rQ7KBG61rV8SfD/hL+hz+6l5fn29SwR8600Iv0HRpB8rFRY+o6oKPWWAgI380aOz5Yo2QID0nUfwl5qbxqd5c1OZ9JOHz4hUWygTtBrsZ0S2/qVuZoWvaBGZfkn/JpvmTWODPwsPH2n63HoIWEgIWh3g1pLCi0hBp/cSMgBa3h1J+GOhoJMpc9IXCh/p1pm1UFeppwzQZrRfFgS/lWgimcJOYZk9LZP+9FILPLNzB/zl0psA//X7tNRfLr0JT2/fBnnzdSmHj8AzyppVh6aElAk8aouN1wCono/q+LpI608v+Eh7Htsx4oBBoHZvf1SRpC8EPiNVpYHuBQzEu1j4bWRTzgq3/zqq59Ml3fSc5v350zdGHCwIFPq/jiR8pJzZdRCwkhC02K+7NK5sTgMsszVtRq3fbWpUfppXLH3MHxsGqJcl6fPBp1UDhNoMQSsJXq11E6cBulH4c/uhssaR1tW80TUEbJOe9GWCj1Ra2kAZoM1ov8gKH+1AXY526bp8MKM8vQs600vNsHvn9jQPgW9QITB3nlbxpI8DT2lGDWTPqoVuiwO6LeQ11t3GfqK5Ee3WRRs4x6d52lEzzRMCn9FSrZXqBVxamyfBAO1273ZkALR7Nx2SfnoWdBrSAr6QLj8ePpJmCVoTIMGrt2xNMEAX6T2F9uDX1jnTIumP5n1700Yg6cfAjwM/lVI1VCzUUgZoMdpOJBgg6PReQQYorSLTCH5qCzpZYxg+0pziesoA7SYicVWw1+X7BhmgaCGRFkn/Zq/m3SYL/OoYFRTVQtBCQpfJfjXBAP0u7/fIANQMYMzBH70Fndtkgo+UPauGNoCZ+CubAaiDmgWlIz/NG5GCzhzl9+2lIulzwZ9aWA23zUAGsEO3hfgpwQDMQUy5k/6CGhec3Lcb4Ku3Ab58i9YXb4b1BsDnYV15ndZnr4V1HuAy0qsAl5DO0fr0LK1PkM7QuvgKrQunwzoF8CeklwE+RjpJ66MTtD5EOk7rjy/R+sMxWr9/MayjAB8gvQDwPqMjAO8hDQG8i3SY1juHaL19MKxBgLeQBgDeZHQA4A2k/QCvIz1P67V9tM4/R+vVf6MkNelzwae1hDIAkkADJAff3dQN3310BuBLFvgM+M9flwA/DP6TVxLh/4kF/kfR8BnwYuAfEQ7/rXj4DPg4+K9xw4dX94qGP1UAfBEGSD7pd3athP/77HWB8KPAs8H/lAU+A/7iaQnwXxIH/70w+PeiwYuBv18UfDi3V3LST4RPgxdhgOThOxsD8NOVN27A/4IF/hUW+Ax40fBP4eHjuvw/MOBfDIMXAv+QOPgxXX4Y/nkW+Odo+HDuWUXgMwbo5jaAN+mkv1jTGO7248d7MfDP8cPnHO+lwD8qHn5kvI+CL3a854APZ+MNIG28ZxOC320h2AxA38KR7PGss4PP3oRhb1By2IuBf5aGD2f3JB322HQLZQACus1cBnB5k5rm+Vv7Uxf2LoyNsAcs8OHMHkXg3zK9ioLPboDwnTvJLOt+cOyAwLD32igIe0MpCXtMl0/pDA0fzjwjM/wqCr4IA4iHrzG3sMNPZdiLgj984lkY3HAXDN7/Gxg+vicWfhqFPYhq9Qx8eOUZydM8HHyBBpBW0NmyYWPahL2hTffAosJyKCsopYT+PbTxtyMQ9vaJgP9MGP5uSskk/UiXHwdfgAGaJVfz3j6yjz3sXVEy7CXCRy0/Gn60CYaPPZN2YQ+iWj0DH04/rQh8HgPQ9+xJLej8+cPTMoS9M0mHvYH7f5MAn9HAvXeID3tvsyzryhj22OAzBpAc9jjgCzeAyONZM8qtaRP2Qnes5jRAaN1KwWFv+MiTMHjPWkrDQ48rFvYi8E/fgA+nQorAv2V6pQADSNjAUVHvwXT55xUNe/Epn9cAAsLe0P13JmaI+9bHwZcn7LHBZzWAwGkeF3hGeAM4myXt3impcabNyl5o/SoeA+DD3vCRJ7kzxKHHZA97EfinbsCHl59KKulzwb+lAGeA8L26UrZuFZZZUh72uJZ18QZYwTveD/x2LXeGuGu1uGVdgeN9PPwYA8gInzFAgM8AUvbtpTrscS3uYA2wdgVv2Aut6ef+/ape2cNeBHwUfDj5ZFJJnws+EoIfMNu4DSB106Zg+BeTqeHzr+yF1q/EG4BnZS+0ms8AIsLeWWHjfQR8GD5lAJnhTwkLwec0ALpKXeq+vVSHPa6VPTTO4w2AX9kLre7DG0DmsHcDPg2e0oknFIC/mBKnAZi79KXu2xMc9i7KWcZNXNbFG2A5wDv4lb0QzgAreyWEPQHwGfAnn6Dgw4nHk0r6XPCFG0DCpk25w97wib0wuOFuaj0fre5ha/hRK3tYA6xZzruyF8IaoEf2sMcGH44/rgh8YQaQeEInqbAXV8MfevBfE+fhm+4RVMZFSR9vAPyGzdAqHgNIhs8e9pguPxo+HN+VVNLngh8xgInTAE2Sj2fJFfZQy+ech7+0BwOfnt+jcZ7bAP28NfzQql4eAwgLe8PPbYHB9f2Uhp/bzBn22ODDS7sUgU8ZwIQMYGUzAP1OjtR9+nIt6+LX8u/kreTxG4Crhv88JawBVgQFhb2hu1bCosKyKPOWwdCdy1nDHht8eOkxydM8Tvj5SBUUfBEGEH5IQ66wh13KXb+Kt4yLgh7n71f381byQrwGwIc91PKj4UebYHjvw6zjfTx8OPaY5GkeDr5IA4g7oSPXyh7eACt5y7j8BsCXcUMre/AGwI73u2FgPXeGGFjbywJ/VwJ8OLZT8jQPB1+EAcQfz5K8YTNuZU9UNY9lWRcFPW4D9PGWcUO8BsCHvVB/F/fv+zo5u/xo+PDizqSSPhd8gQaQdjZPrtM5wos57GVcfgPgy7ghrAG6eRd3sAbo7cTA3xmBDy/uUAS+IANIvYVD+rJu7MoebzGH53QOdi0fGYCnhh/CGWB5N+/iTqgPZ4AOHvg7aB3dkVTS54I/WZABJN7CIdfKHn81D79hk7eYw1PGDa0I4g3As7LHb4DE8T4W/nZKSsCfnL+INoCRywCOJsln8ZMt494o5gio5mE2bIou5pyPXdnDGyCAreHTBujEG0AAfDj6qORpHg4+ZQAjlwHC7+NKvYhBbNjj2qMvupgTt7InyACYDZshPgPwLOtiDdDTnhD2EuC/8CglOcb7ePiT8wQbQPwtHHKdzuEv5uD36PNX8/A1/BDOAP0B3jIuCnpYA8SFPTb48MK2pOFPjoafd0MCDCDtFg5JNXyWPfq8BuA5oCGpmHPuxuIOGuexBuAp4woyQFTYS4B/ZBslJeDfMICFywCNkq9gkesoNn8xB386R3Qx51zsyh7eAF0c8JnFHWSADrwBWMb7ePhwZKsi8GkDWLgM0JhoABH378h1FBu/lr+c94AGfzEHX8MP8RmAp4yLNUCwjQM+A34bwNBWSskkfS74k/MWCjSAhCvX5DqKLbyYw76mz2sAnjJuaHmA+/d9XVj4aIrHawCW8Z5p9Qx8GNqSdNhjgy/MABLv25PrKDavAXiOYguq5mHKuCE+A/BU8lA3z2sATvhbaB3eogh8fgOQjAHEX7km1707ooo5LMu6vAbgOZ0T6scZoJO3jDuwmnsIGVgVYB3vI/APIz1CSTT8PH74jAG6WA1AMgaQdt+eXPfu4A3AUsyJO50jqphzJnFZl9cADHyOMu7w7o3c5eDQ/YLgw6HNSYc9NviTcxdS8DkMsBSQpF62KNe9O9iDGXev4T2NK7iYw3E6JyS4mJMIn5njD63rSdwQsjbIGvZi4B+i4UcMIBl+IvhJYWEN0MdqAGE3bcp1787wkSckHM2SWMx5JXHDJt4AUcUcNvhRizvDT2+AwVUBSnTLZw97bPDh4O8UgT8pt5zbAH2sBhB+rbos9+6El3WH7rsjcVPovesEncYNrRRYzGHbsPmykGoevozLtbLHFfZi4B+k4dMGSC7sscEXaQBx16rLfe/O8OFdMHj3GkoxLZ/naBZ/NQ+/Rz8ktJjDVsZlg8873ifCh8GHFYEvwgDiL1e+hkCnwb07/MUc/OmcELaY0yGgkicG/o0uPxp+vAHkgi/MABJv1v6f1w+mxb07woo53Ac0QnzVPJ4yriD4ceN9NHhKAw9JnuZN5gAfYwCDWawB+K9V/+LI7rS4dwclfawBeE7nhAQVc8SM92LgP0TB/9u+TZKneTj4lAEMZrEGEPaA0su7NqfFvTuCijmY0zkh3mKODGGPDf4ADR8GHoRvn74vqaTPqZwysQYQ/nrWhlVr0uKSRcHFHI7TOQNrevAreTKHvXj4cOBBuPDIOkXgizSAuJc0VBpXcmFPpnt3sAZgijksZVwIL/AM73mQeyVv9wNJhj1++HBgEwytC8oHP+cGfMYAnXgDSH896/KhJ0f8kkXBxRzM6Zyh9b2JK3nrehQJe5QO3IAP+zfBWrdbJvhlCerEG8CT1OtZva0BecOehKPYgoo5Ak7nDO/eCIOruynFtHwZwx4b/J+ffwBKFqgUgT8xYgATmwE80BttAAkPKGXP0cDXR0Ijeski79EsTCUPBG7YlCvsReDvp+HD/o3wwabVSSd9Lvi0AUzsBuiNNkASr2cFfJ3Khj2ee3fQUWzOMfzZh3jg7+Rf2XtBvrDHtHoGPjy/ETqtdsXgT8wp5TGA3SPLO7kHH75P8bCHO6CBjmInjOF39HPDPyb3yp4Y+DR4eP4B+HzrephaUJF00ueCjzeAPdoAmqQeSS6cr4UvDj6hYNjjv3cHHcUeXNdLiW75/GVckHVljwX+AW74SGS9STb4E1ngT8wWZAB53sldXG2F/z7ylGJhT8q9O5xl3GNCxvttsoa9ePh7+9tlmeaxtXoGvgADuGV9J7dksQk+HxRayVP+3p10CnvAwN/3AHz04GrILKyQLenHt/poYQzgZjdAko8kF5Xp4eS2DbKHPdzpHH74Emv4h+ULewz8L7fdATOLlqQEvngDyPhIcrunBb45+lRKLllM77C3Mablzyqqlj3pc8GfmF0iwgAKPJI8o7gBNvT1wfChXYpesqhY2DssT9iDfRtgb39bbLcvY9Lngi/cACLCnpQXslEPQZjcsGPtKnjviYfgu6NPYu/dGUth7/Mt64GsNyqa9NnAxxhAz2UAwq04fK6n0SWHvZNKhL2tEuBzh72f922ADzaugk4LAbdQVT5lkz4XfMoAei4DELQB5IVfJwg+bYCxEfb+9twD8N3T98KFzeuoqh4q7JQsqJOtmicV/gSkLMYAxkQD9BCua8gAWUXik36y8CkDyBn2ouB/u38zdJAeWS9bnKLQjl25x/t4+JPQLEBvhA6d8acEA3RbXd8jA+TO1aQcPm0AsWGP+3QOA//4/etg9vx6Re7bm5LE8ayRgI90ay5tgHat8a8JBgjYXN8gAxTOb5A0zUsGPnolU86w9+2BR6DDwdXq5YM/WaF9e7LBD4OfkLWAUlZBGWWAZQ36qwkG6LQ6P0MGmFemkz3s8cGnDSABPkvYE9zqFYe/ULGCjhT4SDNmLqIM4NcYLicYoM3iPIUMULnYoFjS54JPGSDJsEe3+qWy3qw9ZYThS5nmccFHKp1XRRmguV53IsEALWbH9l7CBbpas2JJnws+eiUzmbBHtfpirlavzH17k2UNe/ImfTb4SHXlNZQBlqo0WxMM0GwkGpEBGnX21MGPeiAZd+8OV9ijWr2zUZFr1aeMMfhIzloNdOoM4KrSuBMMYLW2/TJoc17rsTkhB00FFUj6XPAjBhCxrEu3erVi16pPGYXTPBz8qTkl0KE1QIfOcK15of6fM9i+DovjU9QLlJXrUwofvZHHn/TpLv/bA1ugk2r1yb2elZppXnlawJ+QVQzziiqo1u9T6y5mcH0+A/kwMgChtiqS9LngRwzAM96jVl9EtXp5HlCaMsameVzwJ2QWg7lSRXf/tQ0bOQ3gMruye6yO6902J+TOqU8ZfMoAGPhMq5fz9ax0SfqTZE76bPBvzSmBdtT9a/XXXRpNdgbuazM53u8hnKBaYpR1moeDHzEAy3h//P71VKtX4gGlKalM+imY5sUosziiqgXVaOyHZrXu3Qy+r1FLEsgAHWYHZKMZgOzjfSJ8ygBx8KNb/aiHn5O6pB8Pf0r2AvBr9JQByJp6S4aQD4VBNBuoqzSkBD56Jzd6Wff4huhWr8zrWWmV9HOUgf/rzGKoDLd+n1rLHf4SewGbAxmgy+qAApQFZEr6bOCZR5LZW730R5JHDfxs+ZJ+PPxp+aWwjJ76/eyorrNliPlaTcQ5ZAJSbVEcPhLV6heoZXsk+WZM+hOi4COZKlX02F/fcDpD7OdtsOR1Wx0/IhNUVehlSfpc8JV6J/dmhl82r4qC36bT/0CqVDmiDUCZQEsEkQECFgfMmqe+yeAvTP9pXiY7/PzCcmjT0sHPWV0fyEjmazEQQ0GrA5aZ7FAwRyUI/lTJ8Edx0s8duWleNPzM/FLwqrUU/CaVdjAj2c9V4fpFu9H+MTKBz0BAbpFKctLnAj/q4eeM3DQvGv7U3BJYqmqg4HvV2g9ra2v/IWkDUCbQaid0mMivkAn8BgIKqZ5AHvg3xTQvW7lpHqNp+SXgCcNvUev+w7VEPzlDzs+jtWW1m8mvg1aSGg5mza2XZ7xPdUFn1MIv5oSfX1gW6fZbGnRf2qq1WRlKfLZa269ajcQfkQkCFhKWLNKlPfyxnPR/nVkMxXMqYFk48PnrtR8T5eqJGUp+KBO0GmyHkQmQiHoT5M+uHU/6OamFj8IeM89HalQ1HJRtzBfyLdUR3QEL8SMyQZeZgNpKHWTOrJEv6Y+Sad7EFCd9tLaPlneZVk/N82vUXRkj8ZFGMqfVYDsdtJI/IyO0GQmoW6yD7FnsBhhP+iWS4aMdPQi8X6OLtHqXSvOOvlJVkDHSn1trJtqMxCdBix2QAmY72FQmKClRQ9bMaoWS/tif5k3NLqF28qCuvo1e0w8XdnQXRa/tp+LzqC22ZQbru0EzcT3aDJ4GM2gqdbCoTANF8+og//YayJxZDbdSq3439zRvUnYJTM0thayCcpgxcyGUzq2kdu86azT0Jo4w9A6t7nqzuuFdV43KmpHuH5oyNmnNm5YZbRcDFuKnbjMBQhWgZGOXCcmKl5FLlgR18Sl8r260mJs2mXP2ghU+lYu2ZbPLQG3ZYoSgt+sMP6HW7qpVb1Rsaqf0Z620/tKlNXuatZZtfp31RJuBuNxhsl3tNFq/7zIT18Y8fD0efIfOeK1Nq/9+WYPuql+ju9ys0p3w1Gm3uarVHvS3G2l+49/4N/6N5e//AT811FcEd6HRAAAAAElFTkSuQmCC",
+    "rpcNamespace": "tellfair",
+    "enabledByDefault": true,
+    "tools": [],
+    "commands": []
+  },
+  "libraries": [
+    "lib/devline-tellfair-0.1.0.jar",
+    "lib/gson-2.13.2.jar"
+  ],
+  "webviews": [
+    {
+      "id": "settings",
+      "title": {
+        "en": "Tellfair",
+        "ru": "Tellfair"
+      },
+      "html": "web/tellfair.html",
+      "methods": [
+        "settings",
+        "cabinet"
+      ],
+      "location": "settings",
+      "icon": "soundwave"
+    },
+    {
+      "id": "speech",
+      "title": {
+        "en": "Tellfair",
+        "ru": "Tellfair"
+      },
+      "html": "web/tellfair.html",
+      "methods": [
+        "settings",
+        "presets",
+        "generate",
+        "job",
+        "audio",
+        "exportAudio",
+        "cancel",
+        "cabinet",
+        "balance",
+        "voices",
+        "usage",
+        "remoteJobs",
+        "remoteJob"
+      ],
+      "inlineLauncher": true,
+      "nativeBrowser": {
+        "url": "https://tellfair.com/account",
+        "urlMethod": "miniCabinet"
+      }
+    }
+  ],
+  "documentEditors": [
+    {
+      "id": "speech",
+      "fileAssociation": true,
+      "extensions": [
+        "tfspeech"
+      ],
+      "icon": "data:image/png;base64,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",
+
+      "webview": "speech"
+    }
+  ]
+}
