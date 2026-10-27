@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onUnmounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { UIButton, UIIcon, UIInfoTip } from '@devline/ui-web'
+import { UIButton, UIIcon, UIInfoTip } from '@devline/ui-web/controls'
 import { sdk } from './sdk'
 import { accountRead } from './account-api'
 const { t, locale } = useI18n(), error = ref(''), busy = ref(false), configured = ref(false)

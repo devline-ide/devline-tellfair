@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { nextTick, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { UIButton, UIInput, UIIcon, UIInfoTip } from '@devline/ui-web'
+import { UIButton, UIInput, UIIcon, UIInfoTip } from '@devline/ui-web/controls'
 import { sdk } from './sdk'
 const props = defineProps<{ configured: boolean }>(), emit = defineEmits<{ configured: [value: boolean] }>()
 const { t } = useI18n(), url = ref(''), editing = ref(false), busy = ref(false), error = ref('')

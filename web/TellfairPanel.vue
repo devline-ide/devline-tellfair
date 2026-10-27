@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, reactive } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { UISkeleton, UIButton, UIIcon, UITextArea, UIAudioPlayer, vUITooltip as vTippy } from '@devline/ui-web'
+import { UISkeleton, UIButton, UIIcon, UITextArea, UIAudioPlayer, vUITooltip as vTippy } from '@devline/ui-web/controls'
 import { useTellfair } from './useTellfair'
 import SpeechProperties from './SpeechProperties.vue'
 

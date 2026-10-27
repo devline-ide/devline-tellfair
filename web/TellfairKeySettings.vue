@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, nextTick, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { UIButton, UIIcon, UIInput, UIInfoTip } from '@devline/ui-web'
+import { UIButton, UIIcon, UIInput, UIInfoTip } from '@devline/ui-web/controls'
 import { sdk } from './sdk'
 
 const props = defineProps<{ configured: boolean; startOpen?: boolean }>()

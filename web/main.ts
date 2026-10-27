@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { installUI } from '@devline/ui-web'
+import { installUI } from '@devline/ui-web/controls'
 import { createI18n } from 'vue-i18n'
 import SpeechEditor from './TellfairPanel.vue'
 import Settings from './TellfairSettings.vue'
@@ -8,7 +8,7 @@ import en from './en.json'
 import ru from './ru.json'
 import { sdk } from './sdk'
 import { russianPlural } from './plural'
-import '@devline/ui-web/style.css'
+import '@devline/ui-web/controls.css'
 import './tellfair.scss'
 
 void sdk.ready.then(() => {

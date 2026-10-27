@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { UISkeleton, UIButton, UIIcon, UIInfoTip, UIInput, UISelect, UISlider, vUITooltip as vTippy } from '@devline/ui-web'
+import { UISkeleton, UIButton, UIIcon, UIInfoTip, UIInput, UISelect, UISlider, vUITooltip as vTippy } from '@devline/ui-web/controls'
 import { speechParameters } from './speech-model'
 import type { useTellfair } from './useTellfair'
 
