@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "itemId": "devline.tellfair",
+  "sourceRepository": "devline-ide/devline-tellfair",
+  "sourceRepositoryId": 1434835119,
+  "distributionRepository": "devline-ide/devline-tellfair-releases",
+  "distributionRepositoryId": 1437893753,
+  "ownerId": 328436105,
+  "platforms": [
+    "universal"
+  ],
+  "sourceVisibility": "public"
+}

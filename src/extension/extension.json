@@ -20,7 +20,7 @@
   "extension": {
     "schemaVersion": 1,
     "id": "devline.tellfair",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "name": {
       "en": "Tellfair",
       "ru": "Tellfair"

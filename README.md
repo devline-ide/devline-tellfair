@@ -1,3 +1,8 @@
+## Community development
+
+Public extension sources: Apache-2.0. Build and contribute without private IDE access:
+see [CONTRIBUTING.md](CONTRIBUTING.md) and the pinned [SDK](sdk.lock.json).
+
 # Tellfair for DevLine
 
 Host extension for text to speech, independently packaged as a .dlextension. It is included in the desktop bundled-extension catalog and stays outside application dependencies and exported runtimes.
@@ -24,7 +29,7 @@ Example:
 
 Extensions can declare a webview with location: "sidebar" and a shared icon name. Other webviews default to location: "dock". Activity ordering affects contributed sidebar icons only; Explorer, Search and Git remain first. Drag icons, use Alt+Up/Down, or choose Move up/down from their context menu. Visibility and order are stored with extension preferences in the IDE profile, with version checks on writes.
 
-Build: ./gradlew :devline-tellfair:extensionArchive. Focused checks: :devline-tellfair:tellfairCheck and :devline-ide-extensions:extensionActivityCheck. Both use local fixtures; they never spend Tellfair credits. The installable archive declares API 6, DevLine >= 0.1.0 and its required document, media, settings, ui.inline-launcher and ui.native-browser-settings capabilities. Older hosts reject the archive before activation.
+Community build: `python ci/public_build.py`. Product-integrated Gradle tasks below require the owning Studio checkout.
 
 Validation on 2026-10-23: Kotlin provider/API/desktop dispatcher compilation, strict Vue checks and isolated production UI builds passed. A local HTTP fixture verified request bodies, chunked audio, no-overwrite export, document ownership and HTTP errors. Real service-only Main in headless Chromium verified lazy activation, right-click without loading, fixed core order, drag/keyboard sorting, file creation, Ctrl+S/disk bytes, undo, light/dark rendering, hidden panel unload and reload persistence. A second sidebar contribution was included in the QA package to exercise sorting. Paid production synthesis was not run without a user key. Full Gradle assembly was unavailable due to the shared wrapper cache lock permissions; the archive was assembled with the cached compiler and bundled JDK and validated through the real extension loader. No user IDE was restarted.
 

@@ -77,6 +77,10 @@ fun main() {
         TellfairRuntime(context, URI("http://127.0.0.1:${server.address.port}"), {}).use { runtime ->
             fun rpc(action: String, params: JsonObject): JsonObject {
                 var value = runtime.request("tellfair.$action", params).asJsonObject
+                if (action == "presets") {
+                    val until = System.nanoTime() + java.util.concurrent.TimeUnit.SECONDS.toNanos(2)
+                    while (value["state"]?.asString == "loading" && System.nanoTime() < until) { Thread.sleep(10); value = runtime.request("tellfair.presets", params).asJsonObject }
+                }
                 if (action == "job") {
                     val until = System.nanoTime() + java.util.concurrent.TimeUnit.SECONDS.toNanos(2)
                     while (value["state"].asString == "running" && System.nanoTime() < until) { Thread.sleep(10); value = runtime.request("tellfair.job", params).asJsonObject }

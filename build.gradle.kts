@@ -34,7 +34,7 @@ val packPanel = tasks.register<Exec>("packPanel") {
 }
 val extensionArchive = tasks.register<Zip>("extensionArchive") {
     group = "distribution"
-    archiveFileName.set("devline-tellfair-0.1.9.dlextension")
+    archiveFileName.set("devline-tellfair-0.1.10.dlextension")
     destinationDirectory.set(layout.buildDirectory.dir("extension"))
     from("src/extension/extension.json")
     from(packPanel) { into("web") }
